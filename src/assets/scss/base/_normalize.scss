@@ -23,18 +23,14 @@ html {
   /* 2 */
 
   font-size: 100%;
-  // overflow-y: hidden;
-  height: 100%;
+  
  
 }
 body {
-  margin: 0;
-  font-family: Muli, sans-serif;
-	color: #fff;
-  // overflow-x: hidden;
-  overflow-y: scroll;
-  // transform-style: preserve-3d;
-  // perspective: 1px;
+ height: 100vh;
+  font-family:  "Britannic-bold", sans-serif;
+  @include flex (center, center);
+  color: #fff; 
  }
 
 /* проблема переполнения */
@@ -42,12 +38,6 @@ body {
 // 	outline: solid 1px red;
 // } 
 
-.container {
-	max-width: 1740px;
-	margin: 0 auto;
-	padding: 0 10px;
-	/* 0 10px */
-}
 /* Sections
    ========================================================================== */
 
@@ -214,6 +204,7 @@ sup {
 
 img {
   border-style: none;
+  width: 15px;
 }
 
 /* Forms

@@ -5,30 +5,8 @@
 
 // abstracts
 @import "./abstracts/mixins";
-@import "./abstracts/variables";
 
-//libraries
-@import "./libs/animate.scss";
 
 // components
 
-@import "./components/text";
-@import "./components/title";
-@import "./components/buttons";
-@import "./components/burger";
-@import "./components/menu";
-@import "./components/personal";
-@import "./components/social";
-
-// layout
-@import "./layout/header";
-@import "./layout/smoothies";
-@import "./layout/about";
-@import "./layout/products";
-@import "./layout/story";
-@import "./layout/testimonials";
-@import "./layout/blog";
-@import "./layout/instagram";
-@import "./layout/footer";
-
-@import "./components/burger-active";
+@import "./components/calc";
