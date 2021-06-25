@@ -1,0 +1,19 @@
+.title {
+	@include font ($fs: 3.125rem, $lh: 0.8em, $ls: -0.02em, $fw: 600);
+
+	&--orange {
+		color: #f7ae3b;
+	}
+
+	&--green {
+		color: #0aa566;
+	}
+
+	
+
+	@media only screen and (max-width: 360px) {
+		& {
+			@include font ($fs: 2.75rem, $lh: 1.25em);
+		}
+	}
+}
