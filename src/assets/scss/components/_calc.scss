@@ -1,14 +1,17 @@
 .calc {
-	width: 676;
+	width: 676px;
 	height: 600px;
 	border-radius: 28px;
 	overflow: hidden;
 	background-color: #738396;
-	box-shadow: 4px 4px 40px 5px rgba($color: 17, 22, 44, $alpha: 0.20);
+	box-shadow: 4px 4px 40px 5px rgba(17, 22, 44, 0.20);
+	@include flex ($fd: column);
 
 	// .calc__header
 	&__header {
 		background-color: #374352;
+		height: 50px;
+		@include flex (flex-end, center);
 	}
 
 	// .calc__control
@@ -34,30 +37,49 @@
 	&__display {
 		background-color: #515c69;
 		font-size: 34px;
+		height: 145px;
+
+		@include flex (flex-end, flex-end, wrap, column);
+		padding: 0 30px 30px;
+	}
+
+	&__buttons {
+		display: grid;
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-columns: repeat(4, 1fr) repeat(3, 80px);
+		gap: 1px;
+
+		flex-grow: 1;
 	}
 
 	// .calc__btn--num
 	&__btn--num {
 		background-color: #5b6a7c;
+		@include flex (center, center);
 	}
 
 	// .calc__btn-operation
 	&__btn-operation {
 		background-color: #374352;
+		@include flex (center, center);
 	}
 
 	// .calc__btn-operation-add
 	&__btn-operation-add {
 		background-color: #343a41;
+		@include flex (center, center);	
 	}
 
 	// .calc__img--radical
 	&__img--radical {
 		width: 24px;
 	}
-	&__btn-operation-equal-sign {
-		background: linear-gradient (-30deg, #fe2c75, #fca82c);
+
+	&__btn-equal-sign {
+		background: linear-gradient(-30deg, #fe2c75, #fca82c);
+		grid-area: 5/3/5/5;
 	}
+
 	&__btn-operation--red-text {
 		color: #fe3a6d;
 	}
