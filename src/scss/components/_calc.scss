@@ -4,14 +4,17 @@
 	border-radius: 28px;
 	overflow: hidden;
 	background-color: #738396;
-	box-shadow: 4px 4px 40px 5px rgba(17, 22, 44, 0.20);
-	@include flex ($fd: column);
+	box-shadow: 4px 4px 40px 5px rgba(17, 22, 44, 0.2);
+	display: flex;
+	flex-direction: column;
 
 	// .calc__header
 	&__header {
 		background-color: #374352;
 		height: 50px;
-		@include flex (flex-end, center);
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
 	}
 
 	// .calc__control
@@ -38,8 +41,11 @@
 		background-color: #515c69;
 		font-size: 34px;
 		height: 145px;
-
-		@include flex (flex-end, flex-end, wrap, column);
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		flex-wrap: wrap;
+		flex-direction: column;
 		padding: 0 30px 30px;
 	}
 
@@ -55,19 +61,25 @@
 	// .calc__btn--num
 	&__btn--num {
 		background-color: #5b6a7c;
-		@include flex (center, center);
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	// .calc__btn-operation
 	&__btn-operation {
 		background-color: #374352;
-		@include flex (center, center);
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	// .calc__btn-operation-add
 	&__btn-operation-add {
 		background-color: #343a41;
-		@include flex (center, center);	
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	// .calc__img--radical
