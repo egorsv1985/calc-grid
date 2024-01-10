@@ -1,0 +1,82 @@
+<form
+	class="form"
+	action="#"
+	method="post"
+	autocomplete="on"
+	id="form"
+	name="form"
+	validate
+	target="_self"
+>
+	<div class="form__top">
+		<button class="form__btn-close">
+			<img class="form__img" src="./images/cross.png" alt="cross" />
+		</button>
+		<div class="form__menu">
+			<ol class="form__list">
+				<li class="form__item">
+					<a class="form__link" href="#">Главная</a>
+				</li>
+				<li class="form__item">
+					<a class="form__link" href="#">Контакты</a>
+				</li>
+				<li class="form__active">Форма обратной связи</li>
+			</ol>
+
+			<h1 class="form__title">Форма обратной связи</h1>
+		</div>
+	</div>
+	<div class="form__main">
+		<input
+			class="form__input"
+			type="text"
+			name="text"
+			id="text"
+			placeholder="Иванов Иван Иванович"
+			autocomplete="on"
+			required
+		/>
+		<input
+			class="form__input"
+			type="email"
+			name="email"
+			id="email"
+			placeholder="Введите Ваш Email"
+			autocomplete="on"
+			required
+		/>
+		<input
+			class="form__input"
+			type="tel"
+			name="tel"
+			id="tel"
+			placeholder="Введите Ваш телефон"
+			autocomplete="on"
+			required
+		/>
+		<textarea
+			class="form__input comment"
+			name="comment"
+			id="comment"
+			placeholder=""
+			autocomplete="on"
+		></textarea>
+	</div>
+	<div class="form__bottom">
+		<div class="form__wrapper">
+			<div class="from__box">
+				<input
+					class="form__input captcha"
+					type="text"
+					name="captcha"
+					id="captcha"
+				/>
+				<label class="form__text-bottom">Введите код на картинке справа</label>
+			</div>
+			<img class="form__img-captcha" src="./images/capcha.png" alt="captcha" />
+		</div>
+		<button class="form__btn-submit" type="submit" value="Отправить">
+			Отправить
+		</button>
+	</div>
+</form>
